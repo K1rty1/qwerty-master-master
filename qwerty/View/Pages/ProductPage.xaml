@@ -65,12 +65,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackPanel Grid.Row="2">
-            <TextBlock x:Name="PrevTextBlock" VerticalAlignment="Center" Text="&lt;" Margin="0 0 2 0" FontSize="24" MouseLeftButtonDown="PrevTextBlock_MouseLeftButtonDown"/>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Right">
+            <TextBlock x:Name="PrevTextBlock" VerticalAlignment="Center" Text="&lt;" Margin="0 0 2 0" FontSize="14" MouseLeftButtonDown="PrevTextBlock_MouseLeftButtonDown"/>
             <ListView x:Name="PaginationListView" BorderThickness="0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock FontSize="24" Foreground="{Binding TextColor}" FontWeight="{Binding FontWeight}" Text="{Binding Num}" TextDecorations="{Binding Selected}"/>
+                        <TextBlock FontSize="14" Foreground="{Binding TextColor}" FontWeight="{Binding FontWeight}" Text="{Binding Num}" TextDecorations="{Binding Selected}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
                 <ListView.ItemsPanel>
@@ -79,7 +79,7 @@
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
             </ListView>
-            <TextBlock x:Name="NextTextBlock" VerticalAlignment="Center" Text="&tg;" Margin="2 0 0 0 " FontSize="24" MouseLeftButtonDown="NextTextBlock_MouseLeftButtonDown"/>
+            <TextBlock x:Name="NextTextBlock" VerticalAlignment="Center" Text="&gt;" Margin="2 0 0 0 " FontSize="14" MouseLeftButtonDown="NextTextBlock_MouseLeftButtonDown"/>
         </StackPanel>
         <Button HorizontalAlignment="Left" x:Name="AddProductButton" Content="Добавить товар" Grid.Row="3" Click="AddProductButton_Click"/>
     </Grid>
